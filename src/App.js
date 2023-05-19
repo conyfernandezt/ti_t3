@@ -69,8 +69,6 @@ const removeZeros = (data) => {
   return strippedValue;
 }
 
-app.get("/", (req, res) => res.type('html').send(html));
-
 app.post("/messages", (req, res) => {
   const message = req.body.message;
   const info = atob(message.data);
@@ -94,7 +92,7 @@ app.post("/messages", (req, res) => {
 );
 
 
-app.get('/dashboard', (req, res) => {
+app.get('/', (req, res) => {
 
   var count;
   var op1;
