@@ -20,11 +20,11 @@ app.set('view engine', 'ejs');
 
 //  https://www.techiediaries.com/postgresql-connection-pool-client-example/
 const pool = new Pool({
-  user: process.env.PGUSER,
-  host: process.env.PGHOST,
-  database: process.env.PGDATABASE,
-  password: process.env.PGPASSWORD,
-  port: process.env.PGPORT
+  user: "constanza.fern@uc.cl",
+  host: "langosta.ing.puc.cl",
+  database: "constanza.fern@uc.cl",
+  password: "19639848",
+  port: 5432
 });
 
 const connectDb = async (query) => {
